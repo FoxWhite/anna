@@ -57,6 +57,10 @@ module.exports = {
                 loader: 'url-loader?limit=10000&mimetype=image/png'
             },
             {
+                test: /\.(jpe?g)$/,
+                loader: 'url-loader?limit=10000!img-loader?progressive=true'
+            },
+            {
                 test: /\.(ico)$/,
                 loader: 'url-loader?limit=10000&mimetype=image/x-icon'
             },
@@ -65,7 +69,7 @@ module.exports = {
                 loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
             },
             { test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]'},
-            { test: /\.(ttf|eot)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader?name=fonts/[name].[ext]'},
+            { test: /\.(ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader?name=fonts/[name].[ext]'},
         ]
     }
 };
