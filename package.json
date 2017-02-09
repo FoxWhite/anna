@@ -20,6 +20,7 @@
     "pug": "^2.0.0-beta6",
     "pug-cli": "^1.0.0-alpha6",
     "sass-loader": "^4.1.1",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.14.0",
