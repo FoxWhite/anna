@@ -9,6 +9,28 @@
 .photo-section-1
   height: calc(100vh - 126px)
   background-image: url(~src/images/backgrounds/first.jpg)
+  .container
+    position: relative
+    height: 100%
+  .logo
+    z-index: 0
+    position: fixed
+    left: 50%
+    transform: translateX(-100%)
+    margin-left: -8vw
+    bottom: 15vw
+    width: 30%
+    height: 500px
+    background-repeat: no-repeat
+    background-size: contain
+    background-image: url(~src/images/logo/logo_large.png)
+    @media #{$tablet-screen}
+      width: 30%
+    @media #{$mobile-screen}
+      width: 50%
+      margin-left: 0
+      transform: translateX(-50%)
+
 
 .photo-section-2
   background-image: url(~src/images/backgrounds/second.jpg)
