@@ -13,5 +13,5 @@ install pug globally:
 `npm install pug-cli -g`
 
 and
-`pug src --out public` 
+`pug src/index.pug --out public` 
 to compile pug layouts to html
