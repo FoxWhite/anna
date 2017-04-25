@@ -3,11 +3,15 @@
 You must have `Node.js` and `npm` installed.
 In project direcrory run 
 
-`npm install` 
+`npm install` or `yarn` 
 to install the dependencies,
 
-`webpack build` 
+`webpack` 
 to compile js,
 
-`pug src --out /public` 
+install pug globally:
+`npm install pug-cli -g`
+
+and
+`pug src --out public` 
 to compile pug layouts to html
